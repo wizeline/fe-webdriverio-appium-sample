@@ -1,14 +1,14 @@
 import CommonsScreen from './CommonsScreen'
 
 const ELEMENTS = {
-    ERROR_CREDENTIALS: '-ios predicate string: type == "XCUIElementTypeStaticText" && name CONTAINS "Provided credentials do not match"',
-    ERROR_LOCKED_USER: '-ios predicate string: type == "XCUIElementTypeStaticText" && name CONTAINS "this user has been locked out."',
-    ERROR_REQUIRED_PASSWORD: '-ios predicate string: name == "Password is required"',
-    ERROR_REQUIRED_USERNAME: '-ios predicate string: name == "Username is required"',
+    ERROR_CREDENTIALS: '~Provided credentials do not match any user in this service.',
+    ERROR_LOCKED_USER: '~Sorry, this user has been locked out.',
+    ERROR_REQUIRED_PASSWORD: '~Password is required',
+    ERROR_REQUIRED_USERNAME: '~Username is required',
     LOGIN_BUTTON: '~Login button',
-    LOG_OUT_ALERT: '-ios class chain:**/XCUIElementTypeStaticText[`label == "You are successfully logged out."`]',
-    PASSWORD_INPUT: '-ios predicate string: name == "Password input field"',
-    USERNAME_INPUT: '-ios class chain:**/XCUIElementTypeTextField[`name == "Username input field"`]'
+    LOG_OUT_ALERT: '~You are successfully logged out.', // **/XCUIElementTypeAlert[`label == "You are successfully logged out."`]
+    PASSWORD_INPUT: '~Password input field',
+    USERNAME_INPUT: '~Username input field'
 }
 
 class LoginScreen extends CommonsScreen {
