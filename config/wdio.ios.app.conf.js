@@ -11,7 +11,7 @@ config.specs = [
 ]
 // Patterns to exclude.
 config.exclude = [
-    // './e2e/tests/android*.js',
+    // Scripts to exclude for this specific execution.
 ]
 
 // ====================
