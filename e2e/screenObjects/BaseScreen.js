@@ -27,7 +27,7 @@ export default class BaseScreen {
         const element = await this.find(selector)
         try {
             await this.waitForElement(selector)
-            return await element.isDisplayed()
+            return element.isDisplayed()
         } catch (error) {
             return false
         }
