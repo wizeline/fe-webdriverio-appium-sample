@@ -38,7 +38,10 @@
       "$": true,
       "$$": true,
       "browser": true,
-      "driver": true
+      "driver": true,
+      "fit": true,
+      "fdescribe": true,
+      "beforeAll": true
     },
     "plugins": [
       "wdio",
